@@ -1,0 +1,3 @@
+= Clovercms-dashboard
+
+This project rocks and uses MIT-LICENSE.
