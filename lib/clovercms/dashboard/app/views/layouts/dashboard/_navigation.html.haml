@@ -1,0 +1,7 @@
+- content_for :nav_wrap do
+  %ul#nav= yield :nav
+
+  - if content_for? :sub_nav
+    = yield :sub_nav
+  - else
+    = render :partial => "layouts/dashboard/nav/#{controller_name}", :locals => { :section => @section } rescue nil

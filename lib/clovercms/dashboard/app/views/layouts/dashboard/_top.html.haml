@@ -1,0 +1,8 @@
+- content_for :top do
+  #logo
+  #account_info
+    - if current_user
+      = t 'common.messages.hi'
+      = link_to current_user.username, edit_user_registration_path
+      = t 'common.messages.not_you'
+      = link_to t('links.logout'), destroy_user_session_path

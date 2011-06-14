@@ -1,0 +1,8 @@
+- content_for :head do
+  = javascript_include_tag 'wymeditor/jquery.wymeditor.min', 'boot_wym', 'uploadify/swfobject', 'uploadify/uploadify.min'
+  = stylesheet_link_tag     'themes/smoothness/jquery-ui-1.8.6.custom', 'uploadify/uploadify', 'dashboard'
+  :javascript
+    $(function() {
+      $("##{selected_tab}_menu_link").addClass('active');
+      #{yield :javascript}
+    });
