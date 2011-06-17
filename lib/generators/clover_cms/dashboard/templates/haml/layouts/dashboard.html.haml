@@ -8,19 +8,18 @@
   %head
     %title= content_for?(:title) ? yield(:title) : 'Dashboard'
     = javascript_include_tag :defaults
+    = stylesheet_link_tag 'dashboard'
     = yield :head
     = csrf_meta_tag
   %body
     #wrapper
       #top=yield :top
-      - if content_for? :nav_wrap
-        #nav_wrap= yield :nav_wrap
+      #nav_wrap= yield :nav_wrap
       #content_wrap
         #content
           = render :partial => 'layouts/dashboard/flashes'
           .module
             %h2.title= content_for?(:module_title) ? yield(:module_title) : t( "activerecord.models.#{ selected_tab.singularize }" )
             .module_body= yield
-
       #footer_wrap
         #footer= content_for?(:footer) ? yield(:footer) : 'CloverInteractive'

@@ -1,0 +1,8 @@
+#flash
+  - flash.each do |(status, message)|
+    - css_class = case status.to_s
+      - when 'alert'  then 'error'
+      - when 'notice' then 'success'
+      - else status.to_s
+    - end
+    = content_tag :div, flash[status], :class => css_class

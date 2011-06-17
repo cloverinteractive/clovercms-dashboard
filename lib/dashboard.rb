@@ -1,11 +1,12 @@
 module CloverCms
   module Dashboard
     class Engine < Rails::Engine
-      $DASHBOARD_VIEWS_PATH    = 'lib/clovercms/dashboard/app/views'
-      $DASHBOARD_SASS_PATH     = 'lib/generators/clover_cms/dashboard/templates/sass'
-      $DASHBOARD_IMAGES_PATH   = 'lib/generators/clover_cms/dashboard/templates/images'
+      $DASHBOARD_APP_PATH       = 'lib/clovercms/dashboard'
+      $DASHBOARD_TEMPLATE_PATH  = 'lib/generators/clover_cms/dashboard/templates/'
+      $DASHBOARD_SASS_PATH      = File.join $DASHBOARD_TEMPLATE_PATH, 'sass'
+      $DASHBOARD_IMAGES_PATH    = File.join $DASHBOARD_TEMPLATE_PATH, 'images'
 
-      paths.app.views << $DASHBOARD_VIEWS_PATH
+      paths.app.views   << File.join( $DASHBOARD_APP_PATH, 'app', 'views' )
     end
   end
 end

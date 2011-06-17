@@ -1,1 +1,61 @@
-%p This is a demo app
+- content_for :nav do
+  %li.active= link_to 'Home', '#'
+  %li= link_to 'Pages', '#'
+- content_for :sub_nav do
+  %ul.sub_nav
+    %li= link_to 'List',  '#'
+    %li= link_to 'Edit',  '#'
+
+%p.info This is how info messages look like.
+
+%h1 h1 heading
+%h2 h2 heading
+%h3 h3 heading
+%h4 h4 heading
+%h5 h5 heading
+%h6 h6 heading
+
+%p
+  This is how text looks like rendered in our browser.
+  = link_to 'links', '#'
+
+%p= link_to 'pencil',   '#', :class => 'icon pencil'
+%p= link_to 'add',      '#', :class => 'icon add'
+%p= link_to 'delete',   '#', :class => 'icon delete'
+%p= link_to 'disk',     '#', :class => 'icon disk'
+%p= link_to 'accept',   '#', :class => 'icon accept'
+
+%table.tabular{ :cellpadding => 0, :cellspacing => 0}
+  %thead
+    %tr
+      %th Name
+      %th Last Name
+      %th Origin
+  %tbody
+    %tr.odd
+      %td John
+      %td Doe
+      %td Unknown
+    %tr.even
+      %td Jane
+      %td Doe
+      %td Unknown
+    %tr
+      %td Clark
+      %td Kent
+      %td DC Comics
+
+.columns
+  .column.half
+    %h2 Ordered list
+    %ol
+      %li milk
+      %li eggs
+      %li cereal
+
+  .column.half
+    %h2 Unordered list
+    %ul
+      %li milk
+      %li eggs
+      %li cereal
