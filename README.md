@@ -24,6 +24,8 @@ You first need to download articulate from git and do as follows:
 3. `cd test/dummy && rails g clover_cms:dashboard:install && cd ../../`
 4. `rake`
 
+## Personalize the way I use dashboard
+
 ### Wait, wha'?
 
 `rails g clover_cms:dashboard:install` copies the needed sass and images for your application to have a dashboard look.
