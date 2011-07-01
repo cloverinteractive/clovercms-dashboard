@@ -8,5 +8,5 @@ Gem::Specification.new do |s|
   s.homepage    = 'http://github.com/cloverinteractive/clovercms-dashboard'
   s.description = "Dashboard look n' feel for Rails 3"
   s.files       = Dir["{app,lib,config}/**/*"] + ["MIT-LICENSE", "Rakefile", "Gemfile", "README.rdoc"]
-  s.version     = "0.0.1"
+  s.version     = "0.0.2"
 end
