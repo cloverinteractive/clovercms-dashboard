@@ -1,8 +1,8 @@
 <% content_for :head do %>
   <script type='text/javascript'>
     $(function() {
-      $("##{selected_tab}_menu_link").addClass('active');
-      #{yield :javascript}
+      $("#<%= selected_tab %>_menu_link").addClass('active');
+      <%= yield :javascript %>
     });
   </script>
 <% end %>
