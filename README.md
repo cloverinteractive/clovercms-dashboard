@@ -76,3 +76,4 @@ Feel free fork this project and submit a pull request, don't forget to add yours
 
 * [Enrique Vidal](http://github.com/EnriqueVidal) - Ruby developer
 * [Adan Alvarado](http://github.com/aalvarado) - Designer and Front end developer
+* [Mario Bonales] (http://github.com/marioBonales)
