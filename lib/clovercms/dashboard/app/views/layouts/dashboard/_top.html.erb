@@ -1,5 +1,5 @@
 <% content_for :top do %>
-  <div id="logo"></div>
+  <a href="/"><div id="logo"></div></a>
   <div id="account_info">
     <% if defined?( current_user ) and defined?( edit_user_registration_path ) and defined?( destroy_user_registration_path ) %>
       <%= t 'common.messages.hi' %>
