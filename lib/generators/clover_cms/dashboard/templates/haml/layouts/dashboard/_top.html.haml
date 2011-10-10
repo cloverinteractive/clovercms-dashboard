@@ -1,6 +1,5 @@
 - content_for :top do
-  %a{:href=>"/"}
-    #logo
+  %a#logo{:href=> root_path}
   #account_info
     - if defined?( current_user ) and defined?( edit_user_registration_path ) and defined?( destroy_user_session_path )
       = t 'common.messages.hi'
