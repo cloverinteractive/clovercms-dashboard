@@ -7,6 +7,7 @@ pkg/
 test/dummy/db/*.sqlite3
 test/dummy/log/*.log
 test/dummy/tmp/
+test/dummy/app/stylesheets
 test/dummy/public/stylesheets/*
 test/dummy/public/images/*
 test/dummy/app/sass/dashboard.scss

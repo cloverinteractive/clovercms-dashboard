@@ -16,7 +16,7 @@ To install simply fire up your favorite editor and write `gem 'clovercms-dashboa
 
 ## Running the tests
 
-You first need to download articulate from git and do as follows:
+You first need to download dashboard from git and do as follows:
 
 0. `git clone git://github.com/cloverinteractive/clovercms-dashboard.git`
 1. `cd clovercms-dashboard`
@@ -57,7 +57,6 @@ We currently test and integrate in:
 * ruby 1.9.2
 * ruby 1.8.7
 * ree
-* jruby 1.6.2
 
 ## Run the rails dummy application
 
