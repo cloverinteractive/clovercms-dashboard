@@ -1,3 +1,11 @@
+```
+              _                     _       _                      _   _
+  .-.-.   ___| | _____   _____ _ __(_)_ __ | |_ ___ _ __ __ _  ___| |_(_)_   _____
+ (_\|/_) / __| |/ _ \ \ / / _ \ '__| | '_ \| __/ _ \ '__/ _` |/ __| __| \ \ / / _ \
+ ( /|\ )| (__| | (_) \ V /  __/ |  | | | | | ||  __/ | | (_| | (__| |_| |\ V /  __/
+  '-'-'  \___|_|\___/ \_/ \___|_|  |_|_| |_|\__\___|_|  \__,_|\___|\__|_| \_/ \___|
+```
+
 # Dashboard [![Build Status](http://travis-ci.org/cloverinteractive/clovercms-dashboard.png)](http://travis-ci.org/cloverinteractive/clovercms-dashboard)
 ### Simple dashboard theme for rails 3.x
 
@@ -21,7 +29,7 @@ You first need to download dashboard from git and do as follows:
 0. `git clone git://github.com/cloverinteractive/clovercms-dashboard.git`
 1. `cd clovercms-dashboard`
 2. `bundle install`
-3. `cd test/dummy && rails g clover_cms:dashboard:install && cd ../../`
+3. `bundle exec test/dummy/script/rails g clover_cms:dashboard:install`
 4. `rake`
 
 ## Personalize the way I use dashboard
@@ -74,4 +82,4 @@ Feel free fork this project and submit a pull request, don't forget to add yours
 ## Contributors
 
 * [Enrique Vidal](http://github.com/EnriqueVidal) - Ruby developer
-* [Adan Alvarado](http://github.com/aalvarado) - Designer and Front end developer
+* [Adan Alvarado](http://github.com/aalvarado) - Designer
