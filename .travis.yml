@@ -1,9 +1,10 @@
-script: "cd test/dummy && bundle exec rails g clover_cms:dashboard:install && cd ../../ && rake"
+before_script:  "bundle exec test/dummy/script/rails g clover_cms:dashboard:install"
+script:         "bundle exec rake"
 rvm:
   - 1.8.7
   - 1.9.2
-  - jruby
   - ree
+
 notifications:
   recipients:
     - enrique@cloverinteractive.com
